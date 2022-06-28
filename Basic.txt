@@ -1,0 +1,48 @@
+Basic Terminilogies 
+
+Injection point (where vulnerabilty can be exsist)
+
+Vulnerability 
+flaw or weakness of system
+
+
+payload is script or code that used to identify vulnerability
+===================================================================
+Information Gathering
+
+1 . target.con
+2 *target.com (subdomain)
+3 you have to rank the subdoamins by unpopularity
+less travelled road
+
+4 find ip addr pingany.com
+
+5 programming language by website
+site:target.com.* any language eg. (.php, ..)
+
+cmd # whatweb target.com and search for x-powered-By
+
+6 Open ports and services
+cmd # nmap target ip
+    # nmap target ip -Pn
+    # nmap target ip -sV
+# nmap target ip | namp -sC ip
+7 server info 
+
+apache| tomcat | ngnix | iis
+
+cmd whatweb target ip 
+see if that updated or not 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
