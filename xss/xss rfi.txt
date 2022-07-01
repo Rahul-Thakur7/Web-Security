@@ -1,0 +1,17 @@
+xss through RFI 
+
+anyfile
+
+any.js
+any.html
+
+add payload there
+
+<script>alert(xss )</script>
+
+save this file on online server 
+
+yourwebsite.com/any.html
+
+
+Now find RFI parameters on target.com and replace path and add your link

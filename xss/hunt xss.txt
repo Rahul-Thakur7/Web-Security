@@ -1,0 +1,17 @@
+xss Through filter bypassed payloads
+
+Steps
+
+Find parameter
+Give any input there
+if any of them input reflect back try to inject xss code
+
+lab testphp.vulnweb.com
+
+1 spider the site 
+
+2 Filter urls having parameters
+
+3 check any input parameter reflect or not
+
+4 try to inject xss code or use payload file list ussing intruder 

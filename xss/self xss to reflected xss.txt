@@ -1,0 +1,12 @@
+Self xss to reflected xss 
+
+self xss sometime not accptd
+becoz its refled by self own 
+so what to to ...
+
+
+<script>document.href="http://bing.com"</script>
+
+copy the html code of responce 
+and open in brwser
+ 

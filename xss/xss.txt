@@ -1,0 +1,10 @@
+Basic Xss
+
+steps
+Find some common page such as 
+
+Contact Us| Search bar |Comment Box |Forums |Signup |Login Page | etc
+
+find input parameters
+give any input there if your inputreflect back to you
+try to inject any javascrpts there
