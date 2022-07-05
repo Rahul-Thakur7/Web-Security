@@ -1,0 +1,9 @@
+CSRF 
+
+Cross-Site Request Forgery or Client side Request Forgery(CSRF) is an attack that forces an end user
+to execute unwanted actions on web application in which they're currently authenticated
+
+CSRF injection point 
+CSRF can be GET based and POST based only
+
+ON Login,logout, etc

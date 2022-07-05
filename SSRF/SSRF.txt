@@ -1,0 +1,36 @@
+Server Side Request Forgery (SSRF) 
+
+Concept: Server Side Request Forgery (SSRF) refers to an attack where in an attacker is able to 
+send a crafted request from a vulnerable web application.
+
+
+Impact of SSRF
+ ●Abuse trust 
+ ●Bypass ip whitelisting
+ ●Bypass host based authentication
+ ●Read resource [any.com/?parameter=file://etc/passwd]
+ ●Scan the internal network [any.com/?parameter=file://localhost:1,2,3 to 65535 internal ports scan] xspa cross site scripting port attack
+
+How to Hunt for SSRF
+ ●You have to find any parameter that may have some kind of external interaction or they can interact to external domainExample :
+NOTE ●Any.com/index/php?uri=http://external.com
+
+Possible Related parameter to Hunt for SSRFdest         redirect         uri   path          continue       url   window      next          data   reference   site          html  val             validate        domain  callback         return        pageview                dir           show   file             document   folder   root            path   pg   style  pdf   template   php_path   doc   feed   host   port   to   out   navigation   open   result       
+
+
+Exploitation of SSRF
+ ●Read file from server
+ ●Scan the Internal Network
+ ●SSRF with RFI 
+
+-------------------------------how to identify------------------
+any.com ip addr
+
+add expressvpn.com domain to target.com parameter if got ip of target then there is SSRFs
+
+
+=====================================
+Exploitation of SSRF
+ ●Read file from server  [file:///identifier] use payloads and intruder
+ ●Scan the Internal Network[file://localhost:1,2.....65535]
+ ●SSRF with RFI [create html file with <script>alert(hacked by rahul)</script> and place this file on server and  make reqest from target]
