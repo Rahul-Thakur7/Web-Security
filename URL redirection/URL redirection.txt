@@ -1,0 +1,87 @@
+URL redirection 
+
+its used as part of phishing attack
+
+How to hunt
+----------------------------------
+dest   redirect uri   path continue    url     window   to  out view dir   show   navigation   Open      url     file val  validate   domain                 callback               return                 page                   feed                   host                   port              next                   data                   reference              site                   html    
+-----------------------------------------------
+
+
+
+
+Find any url parameter having some kind of tendency to redirect anywhere
+
+
+
+URL Redirection on path fragements
+example- any.com/payloads
+	 any.com/bing.com
+	 any.com//bing.com
+
+
+============================
+URL redirection through path fragment
+
+eg - abcd-adb.xyz.ua
+
+	abc.xyz.com/www.google.com or //www.gogle.com
+
+
+
+Automationn
+
+parameter /test and applya url redirection payloads
+
+u can also check by render
+
+
+-----------------------------------Reporting-----------------------------------
+
+Vulenrability Name : URL Redirection
+Description:
+URL Redirection is sometimes used as part of phisshing attacks that confuse visitors about which website they are visinting 
+
+
+Vulenrability URL: 
+
+https://target.com/bing or //bing.com
+
+How to reproduce Vulenrability
+
+
+POC:
+
+video enclosed in attachements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
