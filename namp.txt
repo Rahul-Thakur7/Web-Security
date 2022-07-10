@@ -1,0 +1,88 @@
+Nmap :
+------------------------------------------
+single IP  	nmap 192.168.0.1
+subnet(CIDR) 	Range nmap 192.168.0.1/8
+Ip Range 	nmap 192.168.0.1-8
+specific Ip 	nmap 192.168.0.1  5.6.7.8
+Text file 	nmap -iL host.txt
+Domain          nmap target.com
+------------------------------------------
+
+Ports scan technique :
+Single port  		nmap 192.168.0.1 -p80 (only 80)
+Sequence port 		nmap 192.168.0.1 -p20-30  (20 to 30)
+Distributed only	nmap 192.168.0.1 -p80,22,111
+Service specific        nmap 192.168.0.1 -p http   (80,8008)
+Protocol specificc      nmap 192.168.0.1 -p T:80 U:53 (TCP AND UDP SCAN)
+All ports scan          nmap 192.168.0.1 -P-  (scan all 65535 ports)
+
+[nmap 192.168.0.1 --top-ports]
+
+-------------------------------------------
+TCP connection scan -sT   
+TCP SYN SCAN -sS  HALF SCAN 
+FIN SCAN -sF
+XMAS scan -sX
+NULL scan -sN  {sending blank packt }
+Ping scan -sp
+UDP SCAN -sU
+Ack scan -sA {Firewall scan}
+-Host timeout {nmap --host-timeout 500ms 192.168.0.1} 
+-scan delay {nmap --Scan-delay 1s 192.168.0.1} sendind packs in 1sec.. to be safe from IDS traffic
+- FAST SCAN  -T5(disadd. maybe give false positive result) ,-T4(use this in normal network speed), -T3(nomal scan)
+--------------------------------------------
+#Status scan
+-open      [SYN+ACK]
+-close     [RST+ACK]
+-fllterd   [firewall  drop your packts ]
+-unfilterd [DROP scan packt] [Block ports by {sudo iptables -I INPUT -p -tcp --dport=22 -j DROP (its means if any scan packt come to victime ip on port 22 it will drop that scan packts)}]
+-open-filtered [undefine packt receive]
+-close|filtered  (IDLE SCAN)
+
+--------------------
+OUTPUT FORMATE 
+
+-oN [nomal text format]
+-oX [XML format]
+-oG [grepable format]
+-oS [script kiddie format]
+
+
+-------------NSE NMAP SCRIPT ENGINE{most imp} ---------------------------
+
+-FIREWALL BYPASS
+-FTP -ENUM
+-DNS ENUM
+-HTTP ENUM and many more scan
+
+eg. nmap target.com --script http-headers 
+
+u can see here all NSE scripts /usr/share/nmap/scripts
+
+---------------------MISC----------------------------------------
+-SERVICE VERSION  		       nmap -sV  192.168.0.1
+-OS DETECTION      		       nmap -O   192.168.0.1
+-VERBOSITY(FOR DETAIL INFORMATION)     nmap -V  192.168.0.1
+
+-SERVICE+OS DETECTION+SCAN+TRACEROUT   nmap -sA  192.168.0.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
