@@ -43,7 +43,7 @@ CMDi Hunting Example
 ||ls  
 
 -----------------------------------------------
-CMDi Hunting Example Live Web - ●http://projects.knmi.nl/
+
 ===============================================
 Exploitation of CMDi1. 
 Download Commix https://github.com/commixproject/commix.git
