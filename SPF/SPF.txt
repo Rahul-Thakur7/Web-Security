@@ -1,0 +1,64 @@
+spf Record or Not ?
+
+Sender Policy Framework, or SPF, is a technical standard that helps protect email senders and recipients from spam, spoofing, 
+and phishing. It is a form of email authentication
+
+Specifically, it defines a way to validate that an email message was sent from an authorized mail server, 
+in order to detect forgery and to prevent spam. It was designed to supplement SMTP, the basic protocol used to send email, 
+because SMTP does not itself include any authentication mechanisms
+
+
+What is an SPF record?
+
+An SPF record is included in an organization’s DNS database. 
+An SPF record is a specially-formatted version of a standard DNS TXT record. 
+An SPF record looks something like this
+:v=spf1 include:_spf-a.microsoft.com include
+:_spf-b.microsoft.com include:_spf-c.microsoft.com 
+include:_spf-ssg-a.microsoft.com 
+include:spf-a.hotmail.com 
+ip4:147.243.128.24 
+ip4:147.243.128.26 
+ip4:147.243.1.153
+ ip4:147.243.1.47 
+ip4:147.243.1.48 -all
+
+
+How to test SPF ?
+
+go to -https:www.kitterman.comspf/validate.html
+or https://mstoolbox.com
+
+
+Exploitaion :
+1]You can use any fake mailer to forge the mail of a vulnerable site
+2] use anonymousemail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
