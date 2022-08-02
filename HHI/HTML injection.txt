@@ -1,0 +1,26 @@
+HTML injection
+
+Its a type of injection issue that occure when a user is able to control an input point and is able to inject arbitary HTML code into a vulnerable web page
+
+
+Impact :
+
+1] It can allow attacker to modify the page 
+2]DOM can be Load there
+2]Hijack user session
+
+Steps:
+
+1]Find input parameter either GRT , or POST 
+
+2]If your Inut Reflect Back to u then its maybe  a HTML injection
+
+3]Execute any HTML Code, if you succeed to execute any HTML code thereis HTMLi  
+
+
+NOTE: if its reflect like simple strings thenk do check page source code and then try to balance it and see where its reflected and the try to execute
+
+Payloads:
+
+<h1>Hacked by Rahul</h1>
+<A hrefs="https://falc0ntech.netlify.com/">Hunter </A>

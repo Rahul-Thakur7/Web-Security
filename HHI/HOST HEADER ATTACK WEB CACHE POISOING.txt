@@ -1,0 +1,9 @@
+HOST HEADER ATTACK WEB CACHE POISOING
+
+if internal domain will change after then there is HOST HEADER ATTACK WEB CACHE POISOING
+
+mthd 
+
+spider the site find parameter for 2xx|3xx and change Host
+
+its change internal domains

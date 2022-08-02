@@ -1,0 +1,20 @@
+Host Header Hunting 
+
+spider the target
+try on each 2xx
+
+find status code with 2xx means 201|202|203|204
+3xx means 301|302|303|304
+
+target.com
+
+Hunting Method
+
+1] change real  host to some other site.com eg: bing.com 
+and responce should be 30x
+
+2]change real  host to some other site.com eg: bing.com 
+	and set X-Forwarded-Host to realweb.com
+
+3]change real  host to some other site.com eg: bing.com 
+	and set X-Forwarded-Host to bing.com and host to realweb.com

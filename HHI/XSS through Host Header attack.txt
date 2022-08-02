@@ -1,0 +1,11 @@
+XSS through Host Header attack
+
+Find URL with status code 2xx|3xx
+try once on each 2xx|3xx
+
+
+mthd:
+
+Just give your input to Host Parameter if its reflected on response then maybe there is XSS through Host Header attack
+
+create manual payloade or sent req to intruder and apply xss payload list
