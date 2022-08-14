@@ -1,7 +1,6 @@
 # web-hunting-Notes 
 Sharing my learnings to cyber geeks ! 
-Soon I will add more resources to learn who is beginners in cyber sec VAPT 
-Update more OWASP top 10 deleted security issues !
+Soon I will add more resources to learn who is beginners in cyber sec VAPT   More OWASP top 10  security issues !
 ----------------------------------------------------------------------------------------------------------
 
 
