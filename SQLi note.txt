@@ -1,4 +1,19 @@
 SQL injection
+-------------------------------------------
+sql 
+how to run sql in cmd with xamp
+Cd xamp
+cd mysql
+cd bin
+mysql --version
+
+go in xamp\phpmyadmin\confg.inc.php path and check password or update
+mysql -u root -p -h localhost
+
+-------------------------------------------
+
+
+
 -------------------------------------------------------------
 Injection Point for SQL Injection
 ●SQL Injection can be GET Based
