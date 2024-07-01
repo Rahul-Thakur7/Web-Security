@@ -1,7 +1,9 @@
 # web-hunting-Notes 
-Sharing my learnings to cyber geeks ! 
-Soon I will add more resources to learn who is beginners in cyber sec VAPT   More OWASP top 10  security issues !
-----------------------------------------------------------------------------------------------------------
 
+Web-Hunting Notes
 
-Disclaimer: 🥴 Given resources and notes is Only for Educational purpose and for security guy who enthusiastic to learn cyber security , VAPT , web pentesting
+Sharing my learnings with fellow cyber geeks! Soon, I will add more resources for beginners in cybersecurity and VAPT, including more on the OWASP Top 10 security issues.
+
+Disclaimer: 🥴 The resources and notes provided are for educational purposes only and intended for security enthusiasts who are eager to learn about cybersecurity, VAPT, and web pentesting.
+
+We will update this repository from time to time.
